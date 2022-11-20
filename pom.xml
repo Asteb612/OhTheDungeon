@@ -4,8 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>otd</groupId>
 	<artifactId>OhTheDungeonsYoullGo</artifactId>
-	<version>18_Summer_Vacation</version>
+	<version>1.19.2</version>
 	<properties>
+	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
@@ -37,69 +38,45 @@
 	</repositories>
 	<dependencies>
 		<dependency>
-			<groupId>otd.nmshelper</groupId>
-			<artifactId>nms-helper</artifactId>
-			<version>1.18</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
 			<groupId>io.papermc.paper</groupId>
 			<artifactId>paper-api</artifactId>
-			<version>1.18.2-R0.1-SNAPSHOT</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.spigotmc.........</groupId>
-			<artifactId>spigot</artifactId>
-			<version>1.18.2-R0.1-SNAPSHOT</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.spigotmc........</groupId>
-			<artifactId>spigot</artifactId>
-			<version>1.18.1-R0.1-SNAPSHOT</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.spigotmc.......</groupId>
-			<artifactId>spigot</artifactId>
-			<version>1.17</version>
+			<version>1.19.2-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.spigotmc......</groupId>
 			<artifactId>spigot</artifactId>
-			<version>1.16.4</version>
+			<version>1.19.2-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.spigotmc.....</groupId>
 			<artifactId>spigot</artifactId>
-			<version>1.16.3</version>
+			<version>1.18.2-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.spigotmc....</groupId>
 			<artifactId>spigot</artifactId>
-			<version>1.16.2</version>
+			<version>1.17.1-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.spigotmc...</groupId>
 			<artifactId>spigot</artifactId>
-			<version>1.16.1</version>
+			<version>1.16.5-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.spigotmc..</groupId>
 			<artifactId>spigot</artifactId>
-			<version>1.15.2</version>
+			<version>1.15.2-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.spigotmc.</groupId>
 			<artifactId>spigot</artifactId>
-			<version>1.14.4</version>
+			<version>1.14.4-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -126,6 +103,14 @@
 			<version>4.14.2-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>
+		<!--
+		<dependency>
+			<groupId>com.willfp</groupId>
+			<artifactId>EcoBosses</artifactId>
+			<version>8.72.2</version>
+			<scope>provided</scope>
+		</dependency>
+		-->
 		<dependency>
 			<groupId>com.sk89q.worldedit</groupId>
 			<artifactId>worldedit-bukkit</artifactId>
@@ -137,18 +122,6 @@
 			<artifactId>bstats-bukkit</artifactId>
 			<version>3.0.0</version>
 			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.mineacademy.boss</groupId>
-			<artifactId>Boss</artifactId>
-			<version>4.2.0</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.willfp.ecobosses</groupId>
-			<artifactId>EcoBosses</artifactId>
-			<version>8.37.0</version>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>io.papermc</groupId>
@@ -175,6 +148,7 @@
 				<artifactId>maven-shade-plugin</artifactId>
 				<version>3.3.0</version>
 				<configuration>
+					<createDependencyReducedPom>false</createDependencyReducedPom>
 					<relocations>
 						<relocation>
 							<pattern>org.bstats</pattern>
